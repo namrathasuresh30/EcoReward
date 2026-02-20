@@ -1,0 +1,74 @@
+# ========================
+# Python Virtual Environments
+# ========================
+venv/
+.venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ========================
+# Node / Frontend
+# ========================
+node_modules/
+dist/
+.cache/
+*.local
+
+# ========================
+# Environment & Secrets
+# ========================
+.env
+.env.*
+!.env.example
+
+# ========================
+# Database files
+# ========================
+*.db
+*.sqlite
+*.sqlite3
+sql_app.db
+
+# ========================
+# AI / ML model weights
+# ========================
+*.h5
+*.pkl
+*.pt
+*.pth
+
+# ========================
+# Uploaded images (runtime data)
+# ========================
+uploaded_images/
+
+# ========================
+# IDE & OS files
+# ========================
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Logs
+# ========================
+*.log
+logs/
+
+# ========================
+# Pytest / Coverage
+# ========================
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml

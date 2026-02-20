@@ -1,0 +1,26 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+
+# Environment variables
+.env
+
+# Database
+*.db
+*.sqlite3
+sql_app.db
+
+# AI model weights
+*.h5
+*.pkl
+
+# Uploaded runtime files
+uploaded_images/
+
+# Logs
+*.log
