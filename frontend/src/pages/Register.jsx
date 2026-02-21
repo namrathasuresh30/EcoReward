@@ -18,7 +18,14 @@ export default function Register() {
             await register(formData.name, formData.email, formData.password);
             navigate('/dashboard');
         } catch (err) {
-            setError(err.response?.data?.detail || 'Registration failed.');
+            const detail = err.response?.data?.detail;
+            if (typeof detail === 'string') {
+                setError(detail);
+            } else if (Array.isArray(detail)) {
+                setError(detail[0]?.msg || 'Validation error occurred.');
+            } else {
+                setError('Registration failed.');
+            }
         } finally {
             setLoading(false);
         }

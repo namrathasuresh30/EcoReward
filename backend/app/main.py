@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import os
 
 from app.database import engine, Base
-from app.routers import auth, users, uploads, rewards
+from app.routers import auth, users, uploads, rewards, withdrawals
 from fastapi.staticfiles import StaticFiles
 
 # Create database tables
@@ -35,6 +35,7 @@ app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(uploads.router)
 app.include_router(rewards.router)
+app.include_router(withdrawals.router)
 
 if __name__ == "__main__":
     import uvicorn

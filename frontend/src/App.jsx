@@ -5,6 +5,7 @@ import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Upload from './pages/Upload';
 import Rewards from './pages/Rewards';
+import Withdraw from './pages/Withdraw';
 import Navbar from './components/Navbar';
 
 function PrivateRoute({ children }) {
@@ -25,6 +26,7 @@ function AppRoutes() {
                     <Route path="/dashboard" element={<PrivateRoute><Dashboard /></PrivateRoute>} />
                     <Route path="/upload" element={<PrivateRoute><Upload /></PrivateRoute>} />
                     <Route path="/rewards" element={<PrivateRoute><Rewards /></PrivateRoute>} />
+                    <Route path="/withdraw" element={<PrivateRoute><Withdraw /></PrivateRoute>} />
                 </Routes>
             </main>
         </div>

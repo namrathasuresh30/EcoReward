@@ -41,3 +41,18 @@ class RedemptionResponse(BaseModel):
     message: str
     reward_name: str
     points_remaining: int
+
+class WithdrawalRequest(BaseModel):
+    points_amount: int
+    payment_method: str
+    payment_details: str
+
+class WithdrawalResponse(BaseModel):
+    id: UUID
+    points_amount: int
+    currency_amount: float
+    status: str
+    created_at: datetime
+
+    class Config:
+        from_attributes = True

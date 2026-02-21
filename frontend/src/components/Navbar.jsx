@@ -1,6 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Leaf, LogOut, Award, UploadCloud, LayoutDashboard } from 'lucide-react';
+import { Leaf, LogOut, Award, UploadCloud, LayoutDashboard, Wallet } from 'lucide-react';
 
 export default function Navbar() {
     const { user, logout } = useAuth();
@@ -29,6 +29,9 @@ export default function Navbar() {
                         </Link>
                         <Link to="/rewards" className="flex items-center gap-2 hover:text-primary transition">
                             <Award className="w-5 h-5" /> Rewards
+                        </Link>
+                        <Link to="/withdraw" className="flex items-center gap-3 hover:text-primary transition">
+                            <Wallet className="w-5 h-5" /> Withdraw
                         </Link>
                         <div className="flex items-center gap-4 ml-4 pl-4 border-l border-gray-700">
                             <div className="flex flex-col text-right text-sm">

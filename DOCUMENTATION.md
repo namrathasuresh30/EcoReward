@@ -193,6 +193,7 @@ api.interceptors.response.use(response => response, (error) => {
 | Dashboard | `/dashboard` | ✅ | Shows points, upload history stats |
 | Upload | `/upload` | ✅ | Image upload, shows AI result |
 | Rewards | `/rewards` | ✅ | Lists rewards, allows redemption |
+| Withdraw | `/withdraw` | ✅ | Convert points to real currency |
 
 ---
 

@@ -18,7 +18,14 @@ export default function Login() {
             await login(formData.email, formData.password);
             navigate('/dashboard');
         } catch (err) {
-            setError(err.response?.data?.detail || 'Login failed. Please check your credentials.');
+            const detail = err.response?.data?.detail;
+            if (typeof detail === 'string') {
+                setError(detail);
+            } else if (Array.isArray(detail)) {
+                setError(detail[0]?.msg || 'Validation error occurred.');
+            } else {
+                setError('Login failed. Please check your credentials.');
+            }
         } finally {
             setLoading(false);
         }
