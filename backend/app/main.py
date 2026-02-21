@@ -25,8 +25,10 @@ def read_root():
     return {"message": "Welcome to Gamified Trash Platform API"}
 
 # Mount static directory for uploaded images
-import os
 UPLOAD_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "uploaded_images")
+if os.environ.get("VERCEL"):
+    UPLOAD_DIR = "/tmp/uploaded_images"
+
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 app.mount("/uploaded_images", StaticFiles(directory=UPLOAD_DIR), name="uploaded_images")
 
