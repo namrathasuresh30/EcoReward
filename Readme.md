@@ -88,18 +88,12 @@ npm run dev
 
 ## 🖼️ Screenshots
 
-| Dashboard | AI Upload |
-| :---: | :---: |
-| ![Dashboard](./screenshots/dashboard.png) | ![Upload](./screenshots/upload.png) |
-
-| Rewards | Withdrawal (₹) |
-| :---: | :---: |
-| ![Rewards](./screenshots/rewards.png) | ![Withdraw](./screenshots/withdraw.png) |
+| https://drive.google.com/drive/folders/1wPSu32a2wQTHWvyCE8FyDPrfeOEt-QFl
 
 ---
 
 ## 🎬 Demo Video
-[🔗 Watch the EcoReward Demo Video](https://example.com/demo-video) *(Placeholder)*
+| https://drive.google.com/drive/folders/1wPSu32a2wQTHWvyCE8FyDPrfeOEt-QFl
 
 ---
 
